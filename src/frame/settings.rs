@@ -44,7 +44,7 @@ pub const DEFAULT_SETTINGS_HEADER_TABLE_SIZE: usize = 4_096;
 pub const DEFAULT_INITIAL_WINDOW_SIZE: u32 = 65_535;
 
 /// The default value of MAX_FRAME_SIZE
-pub const DEFAULT_MAX_FRAME_SIZE: FrameSize = 16_384;
+pub const DEFAULT_MAX_FRAME_SIZE: FrameSize = 8 * 1024;
 
 /// INITIAL_WINDOW_SIZE upper bound
 pub const MAX_INITIAL_WINDOW_SIZE: usize = (1 << 31) - 1;
