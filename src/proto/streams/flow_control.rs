@@ -46,6 +46,8 @@ pub struct FlowControl {
     /// This can go negative if a user declares a smaller target window than
     /// the peer knows about.
     available: Window,
+
+    pub error: u8,
 }
 
 impl FlowControl {
@@ -53,6 +55,7 @@ impl FlowControl {
         FlowControl {
             window_size: Window(0),
             available: Window(0),
+            error: 0,
         }
     }
 
